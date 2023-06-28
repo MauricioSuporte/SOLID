@@ -12,6 +12,6 @@ public class ClientService
 
         EmailService.Send("company@company.com", client.Email, "Welcome!", "Registration completed successfully.");
 
-        return "Successfully registered client";
+        return "Successfully registered client.";
     }
 }
