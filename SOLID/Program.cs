@@ -1,4 +1,5 @@
-﻿using SOLID.OCP.Solution;
+﻿using SOLID.LSP.Solution;
+using SOLID.OCP.Solution;
 using SOLID.SRP.Solution;
 
 Console.WriteLine("Choose a SOLID principle:");
@@ -32,7 +33,8 @@ switch (opcao.KeyChar)
         creditCard.MakePayment(78.54m);
         break;
     case '3':
-        //CalculoArea.Calcular();
+        Rectangle rectangle = new(10, 5);
+        rectangle.ReportArea();
         break;
     case '4':
         //CalculoArea.Calcular();

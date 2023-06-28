@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="3 - LSP\Solution\" />
-    <Folder Include="3 - LSP\Violation\" />
     <Folder Include="4 - ISP\Solution\" />
     <Folder Include="4 - ISP\Violation\" />
     <Folder Include="5 - DIP\Solution\" />
