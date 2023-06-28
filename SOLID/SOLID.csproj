@@ -7,4 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="1 - SRP\Solution\" />
+    <Folder Include="2 - OCP\Solution\" />
+    <Folder Include="2 - OCP\Violation\" />
+    <Folder Include="3 - LSP\Solution\" />
+    <Folder Include="3 - LSP\Violation\" />
+    <Folder Include="4 - ISP\Solution\" />
+    <Folder Include="4 - ISP\Violation\" />
+    <Folder Include="5 - DIP\Solution\" />
+    <Folder Include="5 - DIP\Violation\" />
+  </ItemGroup>
+
 </Project>

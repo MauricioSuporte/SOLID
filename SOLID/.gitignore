@@ -1,0 +1,25 @@
+# Arquivos de compilação
+*.exe
+*.dll
+*.pdb
+*.obj
+*.lib
+*.exp
+
+# Arquivos de build do Visual Studio
+*.suo
+*.user
+*.sln.docstates
+*.vsidx
+bin/
+obj/
+
+# Arquivos gerados por ferramentas
+_ReSharper*/
+*.resharper*
+*.dotCover*
+*.coverlet*
+*.opencover*
+
+
+#
