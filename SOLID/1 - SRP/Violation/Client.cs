@@ -4,7 +4,7 @@ namespace SOLID.SRP.Violation;
 
 public class Client
 {
-    private static List<Client> clients = new List<Client>();
+    private static List<Client> clients = new();
 
     public static List<Client> Clients
     {
@@ -12,7 +12,7 @@ public class Client
         private set { clients = value; }
     }
 
-    public int ClienteId { get; set; }
+    public int ClientId { get; set; }
 
     public string Name { get; set; } = string.Empty;
 
@@ -20,17 +20,17 @@ public class Client
 
     public string CPF { get; set; } = string.Empty;
 
-    public DateTime DataCadastro { get; set; }
+    public DateTime DataRegister { get; set; }
 
-    public string AdicionarCliente()
+    public string InserClient()
     {
         var client = new Client()
         {
-            ClienteId = 12345,
+            ClientId = 12345,
             Name = "Sample Exemple",
             Email = "exemple@email.com",
             CPF = "62825011053",
-            DataCadastro = DateTime.Now,
+            DataRegister = DateTime.Now,
         };
 
         if (!client.Email.Contains('@'))
@@ -42,7 +42,7 @@ public class Client
         // Simulates database insert logic
         Clients.Add(client);
 
-        var mail = new MailMessage("empresa@empresa.com", Email);
+        var mail = new MailMessage("company@company.com", Email);
 
         var smtpClient = new SmtpClient
         {
@@ -54,8 +54,9 @@ public class Client
 
         mail.Subject = "Welcome!";
         mail.Body = "Registration completed successfully.";
-        smtpClient.Send(mail);
 
-        return "Successfully registered customer";
+        // Simulates email send logic
+
+        return "Successfully registered client";
     }
 }
