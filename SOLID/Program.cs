@@ -1,6 +1,7 @@
 ﻿using SOLID.LSP.Solution;
 using SOLID.OCP.Solution;
 using SOLID.SRP.Solution;
+using SOLID.ISP.Solution;
 
 Console.WriteLine("Choose a SOLID principle:");
 Console.WriteLine();
@@ -37,7 +38,10 @@ switch (opcao.KeyChar)
         rectangle.ReportArea();
         break;
     case '4':
-        //CalculoArea.Calcular();
+        RegisterClient registerClient = new();
+        registerClient.ValidateData();
+        registerClient.SaveDatabase();
+        registerClient.SendEmail();
         break;
     case '5':
         //CalculoArea.Calcular();
