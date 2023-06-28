@@ -1,4 +1,5 @@
-﻿using SOLID.SRP.Solution;
+﻿using SOLID.OCP.Solution;
+using SOLID.SRP.Solution;
 
 Console.WriteLine("Choose a SOLID principle");
 Console.WriteLine("1 - S (Single Responsibility)");
@@ -25,7 +26,8 @@ switch (opcao.KeyChar)
                 }));
         break;
     case '2':
-        //CalculoArea.Calcular();
+        CreditCard creditCard = new();
+        creditCard.MakePayment(78.54m);
         break;
     case '3':
         //CalculoArea.Calcular();
