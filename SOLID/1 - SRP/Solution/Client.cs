@@ -11,9 +11,4 @@ public class Client
     public string CPF { get; set; } = string.Empty;
 
     public DateTime RegistrationDate { get; set; }
-
-    public bool IsValid()
-    {
-        return EmailService.IsValid(Email) && CPFService.IsValid(CPF);
-    }
 }

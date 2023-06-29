@@ -4,7 +4,7 @@ public class ClientService
 {
     public static bool AddClient(Client client)
     {
-        if (!client.IsValid())
+        if (!ClientValidation.IsValid(client.Email, client.CPF))
         {
             Console.WriteLine("Invalid Client!");
             return false;
