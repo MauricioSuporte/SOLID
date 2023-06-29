@@ -10,7 +10,7 @@ public class ClienteRepository
         private set { clients = value; }
     }
 
-    public void InsertClient(Client client)
+    public static void InsertClient(Client client)
     {
         // Simulates database insert logic
         Clients.Add(client);

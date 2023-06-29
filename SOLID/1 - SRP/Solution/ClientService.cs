@@ -10,12 +10,17 @@ public class ClientService
             return false;
         }
 
-        var repository = new ClienteRepository();
-        repository.InsertClient(client);
+        ClienteRepository.InsertClient(client);
 
-        EmailService.Send("company@company.com", client.Email, "Welcome!", "Registration completed successfully.");
+        EmailService.Send(
+            from: "company@company.com",
+            to: client.Email,
+            subject: "Welcome!",
+            messege: "Registration completed successfully.");
 
         Console.WriteLine("Successfully registered client.");
         return true;
     }
 }
+
+
