@@ -53,6 +53,7 @@ public class Menu
         registerClient.ValidateData();
         registerClient.SaveDatabase();
         registerClient.SendEmail();
+        registerClient.ReportSucess();
     }
 
     public void RedirectDIP()

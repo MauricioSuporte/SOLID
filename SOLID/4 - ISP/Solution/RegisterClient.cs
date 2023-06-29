@@ -18,4 +18,9 @@ internal class RegisterClient : IRegisterClient
     {
         // Send email to client
     }
+
+    public void ReportSucess()
+    {
+        Console.WriteLine("Successfully registered client.");
+    }
 }

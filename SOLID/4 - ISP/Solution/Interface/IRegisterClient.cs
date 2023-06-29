@@ -7,4 +7,6 @@ internal interface IRegisterClient
     void SaveDatabase();
 
     void SendEmail();
+
+    void ReportSucess();
 }
