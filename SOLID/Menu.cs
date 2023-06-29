@@ -29,7 +29,8 @@ public class Menu
     public static void RedirectLSP()
     {
         Rectangle rectangle = new(10, 5);
-        rectangle.ReportArea();
+
+        Console.WriteLine($"Rectangle area is {rectangle.Area}m²");
     }
 
     public static void RedirectISP()
