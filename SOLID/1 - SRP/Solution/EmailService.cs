@@ -9,19 +9,8 @@ public static class EmailService
         return email.Contains('@');
     }
 
-    public static void Send(string from, string to, string assunto, string messege)
+    public static void Send(string from, string to, string subject, string messege)
     {
-        var mail = new MailMessage(from, to);
-        var client = new SmtpClient
-        {
-            Port = 25,
-            DeliveryMethod = SmtpDeliveryMethod.Network,
-            UseDefaultCredentials = false,
-            Host = "smtp.google.com"
-        };
-
-        mail.Subject = assunto;
-        mail.Body = messege;
         // Simulates email send logic
     }
 }

@@ -1,7 +1,4 @@
-﻿using SOLID.LSP.Solution;
-using SOLID.OCP.Solution;
-using SOLID.SRP.Solution;
-using SOLID.ISP.Solution;
+﻿using SOLID;
 
 Console.WriteLine("Choose a SOLID principle:");
 Console.WriteLine();
@@ -11,39 +8,25 @@ Console.WriteLine("3 - L (Liskov Substitution)");
 Console.WriteLine("4 - I (Interface Segregation)");
 Console.WriteLine("5 - D (Dependency Inversion)");
 
-var opcao = Console.ReadKey();
+var option = Console.ReadKey();
 Console.WriteLine();
 Console.WriteLine();
 
-switch (opcao.KeyChar)
+switch (option.KeyChar)
 {
     case '1':
-        Console.WriteLine(
-            ClientService.AddClient(
-                new Client()
-                {
-                    ClienteId = 1,
-                    CPF = "97895025082",
-                    Email = "exemple@email.com",
-                    Name = "Sample Exemple",
-                    DateRegister = DateTime.Now,
-                }));
+        Menu.RedirectSRP();
         break;
     case '2':
-        CreditCard creditCard = new();
-        creditCard.MakePayment(78.54m);
+        Menu.RedirectOCP();
         break;
     case '3':
-        Rectangle rectangle = new(10, 5);
-        rectangle.ReportArea();
+        Menu.RedirectLSP();
         break;
     case '4':
-        RegisterClient registerClient = new();
-        registerClient.ValidateData();
-        registerClient.SaveDatabase();
-        registerClient.SendEmail();
+        Menu.RedirectISP();
         break;
     case '5':
-        //CalculoArea.Calcular();
+        Menu.RedirectDIP();
         break;
 }

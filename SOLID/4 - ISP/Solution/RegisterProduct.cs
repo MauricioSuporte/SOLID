@@ -6,11 +6,11 @@ internal class RegisterProduct : IRegisterProduct
 {
     public void SaveDatabase()
     {
-        // Validate CPF, Email, etc
+        // Validate values
     }
 
     public void ValidateData()
     {
-        throw new NotImplementedException();
+        // Insert Product database
     }
 }

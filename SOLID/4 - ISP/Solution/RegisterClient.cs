@@ -6,16 +6,16 @@ internal class RegisterClient : IRegisterClient
 {
     public void ValidateData()
     {
-        // Validate CPF, Email, etc
-    }
-
-    public void SendEmail()
-    {
-        // Insert Client database
+        // Validate values
     }
 
     public void SaveDatabase()
     {
-        throw new NotImplementedException("Product has no email");
+        // Insert Client database
+    }
+
+    public void SendEmail()
+    {
+        // Send email to client
     }
 }

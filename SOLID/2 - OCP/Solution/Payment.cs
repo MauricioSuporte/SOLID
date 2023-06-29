@@ -13,7 +13,6 @@ public abstract class Payment
         TransactionId = new string(Enumerable.Repeat(chars, 15)
           .Select(s => s[random.Next(s.Length)]).ToArray());
 
-        // Numero de transacao formatado
         return TransactionId;
     }
 

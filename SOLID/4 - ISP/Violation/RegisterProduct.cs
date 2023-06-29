@@ -7,7 +7,7 @@ public class RegisterProduct : IRegister
 {
     public void ValidateData()
     {
-        // Validate value
+        // Validate values
     }
 
     public void SaveDatabase()

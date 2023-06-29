@@ -2,16 +2,20 @@
 
 public class ClientService
 {
-    public static string AddClient(Client client)
+    public static bool AddClient(Client client)
     {
         if (!client.IsValid())
-            return "Invalid Client!";
+        {
+            Console.WriteLine("Invalid Client!");
+            return false;
+        }
 
         var repository = new ClienteRepository();
         repository.InsertClient(client);
 
         EmailService.Send("company@company.com", client.Email, "Welcome!", "Registration completed successfully.");
 
-        return "Successfully registered client.";
+        Console.WriteLine("Successfully registered client.");
+        return true;
     }
 }

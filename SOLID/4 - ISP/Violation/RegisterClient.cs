@@ -7,7 +7,7 @@ public class RegisterClient : IRegister
 {
     public void ValidateData()
     {
-        // Validate value
+        // Validate values
     }
 
     public void SaveDatabase()
@@ -17,6 +17,6 @@ public class RegisterClient : IRegister
 
     public void SendEmail()
     {
-        throw new NotImplementedException("Product has no email");
+        // Send email to client
     }
 }

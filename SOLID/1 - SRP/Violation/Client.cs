@@ -22,7 +22,7 @@ public class Client
 
     public DateTime DataRegister { get; set; }
 
-    public string InserClient()
+    public static string InserClient()
     {
         var client = new Client()
         {
@@ -41,19 +41,6 @@ public class Client
 
         // Simulates database insert logic
         Clients.Add(client);
-
-        var mail = new MailMessage("company@company.com", Email);
-
-        var smtpClient = new SmtpClient
-        {
-            Port = 25,
-            DeliveryMethod = SmtpDeliveryMethod.Network,
-            UseDefaultCredentials = false,
-            Host = "smtp.google.com"
-        };
-
-        mail.Subject = "Welcome!";
-        mail.Body = "Registration completed successfully.";
 
         // Simulates email send logic
 
