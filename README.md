@@ -10,7 +10,7 @@ This repository is inspired by the SOLID repository created by EduardoPires. You
 
 To run the examples, follow the steps below:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
+1. Clone the repository: `git clone https://github.com/MauricioSuporte/SOLID.git`
 2. Open the solution in your preferred IDE.
 3. Build the solution to ensure all dependencies are resolved.
 4. Run the program.
