@@ -2,7 +2,7 @@
 
 public class Client
 {
-    public int ClienteId { get; set; }
+    public int ClientId { get; set; }
 
     public string Name { get; set; } = string.Empty;
 
@@ -10,7 +10,7 @@ public class Client
 
     public string CPF { get; set; } = string.Empty;
 
-    public DateTime DateRegister { get; set; }
+    public DateTime RegistrationDate { get; set; }
 
     public bool IsValid()
     {

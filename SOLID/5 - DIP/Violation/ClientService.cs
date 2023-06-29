@@ -12,7 +12,7 @@ namespace EP.SOLID.DIP.Violacao
             var repo = new ClientRepository();
             repo.InsertClient(client);
 
-            EmailService.Enviar("empresa@empresa.com", client.Email, "Welcome", "Parabéns está Cadastrado");
+            EmailService.Send("empresa@empresa.com", client.Email, "Welcome", "Parabéns está Cadastrado");
 
             return "Cliente cadastrado com sucesso";
         }

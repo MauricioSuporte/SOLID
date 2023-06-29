@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "g8LZWRsy4nwP5NqA1pc9SAsI5RTy9FcA9ABw6rfBKadzwLRsykFfbD+86fcwhVO4PMNqdIV3GE1d/iYRk6gzUg==",
+  "dgSpecHash": "cwdF+F872c8ZsoJUxVkEoMLkLPHjzS54J+GeEyqbIW37EHykVaVvjTHzASwktDekKX9+8la7xXd6xawa/FE1Pw==",
   "success": true,
   "projectFilePath": "C:\\repositorios\\poc-SOLID\\SOLID\\SOLID.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mauricio.souza\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\mauricio.souza\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -8,10 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="4 - ISP\Solution\" />
-    <Folder Include="4 - ISP\Violation\" />
-    <Folder Include="5 - DIP\Solution\" />
-    <Folder Include="5 - DIP\Violation\" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

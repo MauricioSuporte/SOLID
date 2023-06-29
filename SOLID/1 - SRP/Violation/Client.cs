@@ -20,7 +20,7 @@ public class Client
 
     public string CPF { get; set; } = string.Empty;
 
-    public DateTime DataRegister { get; set; }
+    public DateTime RegistrationDate { get; set; }
 
     public static string InserClient()
     {
@@ -30,7 +30,7 @@ public class Client
             Name = "Sample Exemple",
             Email = "exemple@email.com",
             CPF = "62825011053",
-            DataRegister = DateTime.Now,
+            RegistrationDate = DateTime.Now,
         };
 
         if (!client.Email.Contains('@'))

@@ -7,7 +7,7 @@ public class EmailService
         return email.Contains('@');
     }
 
-    public static void Enviar(string from, string to, string subject, string messege)
+    public static void Send(string from, string to, string subject, string messege)
     {
         // Send email logic
     }
